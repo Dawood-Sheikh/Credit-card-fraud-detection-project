@@ -11,7 +11,7 @@ It contains only numerical input variables which are the result of a PCA transfo
 ##### Inspiration
 Identify fraudulent credit card transactions.
 
-Given the class imbalance ratio, we recommend making a new dataset with the help of random sampling which contain equal number of legit and fraudulent transactions(492 each) and using Logistic Regression Model on it. Confusion matrix accuracy is not meaningful for unbalanced classification.
+Given the class imbalance ratio, we recommend making a new dataset with the help of random sampling which contain equal number of legit and fraudulent transactions and using Logistic Regression Model on it. Confusion matrix accuracy is not meaningful for unbalanced classification.
 
 ##### Acknowledgements
 The dataset has been collected and analysed during a research collaboration of Worldline and the Machine Learning Group (http://mlg.ulb.ac.be) of ULB (Université Libre de Bruxelles) on big data mining and fraud detection. More details on current and past projects on related topics are available on https://www.researchgate.net/project/Fraud-detection-5 and the page of the DefeatFraud project
