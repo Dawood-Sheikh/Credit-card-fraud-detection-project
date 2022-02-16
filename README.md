@@ -64,7 +64,7 @@ Compute instance is fully integrated with Azure Machine Learning workspace and s
    To see if the endpoint is working perfectly, we have run a small program that uses the model in the endpoint to predict any anomaly in the inputted transaction details and tell whether they are fraudulent or non-fraudulent by giving output as 1 or 0 (1 being fraudulent and 0 beings non-fraudulent).
  ![Deployment](https://user-images.githubusercontent.com/93479207/153920370-024993ed-abf4-4362-864b-26c56e24ba31.gif)
  
-##### Acknowledgments
+### Acknowledgments
 I would like to express my special thanks of gratitude to the mentors of Future Ready Talent who gave me the golden opportunity to do this wonderful project, which also helped me in doing a lot of research and I came to know about so many new things I am thankful to them.
 
 The dataset has been collected and analyzed during a research collaboration of Worldline and the Machine Learning Group (http://mlg.ulb.ac.be) of ULB (Université Libre de Bruxelles) on big data mining and fraud detection. 
