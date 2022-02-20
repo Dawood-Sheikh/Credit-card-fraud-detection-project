@@ -1,7 +1,7 @@
 # Credit-card-fraud-detection-project
 
 #### *Context*
-Project about anomaly detection in credit card transactions using Azure Machine learning. 
+This project about anomaly detection in credit card transactions using Azure Machine learning. 
 
 #### *Primary Azure Technology used:*
 1. AI + Machine Learning
@@ -9,22 +9,22 @@ Project about anomaly detection in credit card transactions using Azure Machine 
 3. Container Instances
 
 #### *Problem Statement/Opportunity*
-Identifying the fraudulent credit card transactions so that customers are not charged for the items that they did not purchase.
+To identifying the fraudulent credit card transactions so that customers are not charged for the items that they did not purchase.
 
 #### *Project Description:*
-This project is created with the help of Azure machine learning studio and AutoML to find a pattern between Fraudulent and Non-fraudulent transactions. This is done with the help of Logistic Regression which found the pattern in the 30 features provided in the dataset ([more info on the dataset](https://github.com/Dawood-Sheikh/Credit-card-fraud-detection-project/blob/main/Dataset%20Info.md)) and distinguishes between each transaction. An average of 97% of accuracy is achieved by the experiment on the training data and the best model is picked and used on test data and used for deployment. The deployed model is stored in container instancesbwhich can be used by any person when called. A more detailed explanation is given below:
+This project is created with the help of Azure machine learning studio and AutoML to find a pattern between Fraudulent and Non-fraudulent transactions. This is done with the help of Logistic Regression which finds the pattern in the 30 features provided in the dataset ([more info on the dataset](https://github.com/Dawood-Sheikh/Credit-card-fraud-detection-project/blob/main/Dataset%20Info.md)) and distinguishes between each transaction. An average of 97% of accuracy is achieved by the experiment on the training data. The best model is picked and applied on test data and used for deployment. The deployed model is stored in container instances which can be used by any person when called. A more detailed explanation is given below:
 
 ##### Creating the workspace:
 The first step in creating the project was creating a workspace in the Azure portal. The workspace was created with the help of Machine Learning resource. One needs to click on create button and fill in all the relevant details needed to create the workspace.
 ![Machine Learning Resource](https://user-images.githubusercontent.com/93479207/153747468-d6e758b1-7375-487c-86f9-9fa0abcf24ca.jpg)
 
-After filling in all the details press **review & create** to conclude the process and wait for the deployment of the resource.
+After filling in all the details click on **review & create** button to conclude the process and wait for the deployment of the resource.
 ![Credit card fraud detection resource](https://user-images.githubusercontent.com/93479207/153747484-be92e7e8-9016-40c3-a85c-87b7915bb8e0.jpg)
 
 ##### Working on Machine Learning Studio
 
    ###### Creating Instances
-   After creating the workspace one can launch Machine Learning Studio and work on creating their ML model. Before working on the actual code we need to assign a Virtual Machine for the experiment which can be done with the help of Compute Instances. It is a managed cloud-based workstation for data scientists. You can build and deploy models using integrated notebooks and the following tools in Azure Machine Learning studio:
+   After creating the workspace one can launch Machine Learning Studio and work on creating their ML model. Before working on the actual code we need to assign a Virtual Machine for the experiment which can be done with the help of Compute Instances. It is a managed cloud-based workstation for data scientists. You can build and deploy models using integrated notebooks. The following tools can be used in Azure Machine Learning studio:
 - Jupyter
 - JupyterLab
 - VS Code (preview)
@@ -36,16 +36,16 @@ Compute instance is fully integrated with Azure Machine Learning workspace and s
    ![bandicam-2022-02-10-16-55-46-858](https://user-images.githubusercontent.com/93479207/153761065-44a041df-8689-40d2-95b6-db5163c3c376.gif)
 
    ###### Data Analysis
-   After importing the libraries, the next step is uploading the dataset in the notebook. The dataset contains approx. 2.80 million transaction details of the cardholders which are already been classified into Fraudulent and Non-fraudulent transactions (1 = fraud, 0 = non-fraud). Since the dataset is so unbalanced we need to use data analysis techniques to clean and trim the dataset. The first step in data analysis is understanding the dataset and finding any null values. The next step in data analysis is to create a sample dataset containing an equal number of fraudulent and non-fraudulent transactions with the help of the under-sampling method. This new dataset will be used to train the model.
+   After importing the libraries, the next step is to upload the dataset in the notebook. The dataset contains approx. 2.80 million transaction details of the cardholders which are already been classified into Fraudulent and Non-fraudulent transactions (1 = fraud, 0 = non-fraud)(Fraudulent transactions = 492). Since the dataset is so unbalanced we need to use data analysis techniques to clean and trim the dataset. The first step in data analysis is understanding the dataset and finding any null values. The next step is to create a sample dataset containing an equal number of fraudulent and non-fraudulent transactions with the help of the under-sampling method. This new dataset will be used to train the model.
   
   
   https://user-images.githubusercontent.com/93479207/153823260-31e146e1-7da4-4b15-8f2e-8ebc3c118d66.mp4
    
    ###### Splitting the data
-   After creating the ideal dataset, the next step is to split the data into features and targets, and training and test dataset. the training dataset will be used to train the model and the efficiency will be tested with the help of the testing model.
+   After creating the ideal dataset, the next step is to split the data into features and targets, and training and test dataset. The training dataset will be used to train the model and the efficiency will be tested with the help of the testing model.
    
    ###### AutoML & Experiment
-   The next step is the train the model. This was done with the help of AutoML. Since we know the problem statement is of a classification nature and the classes were already provided, therefore, Logistic Regression was used. Other models were blocked in AutoMl and an experiment 'Credit Card' was created. An average score of 97% was found in the experiments conducted with the models and among them, the best model was selected for testing.
+   The next step is to train the model. This was done with the help of AutoML. Since we know the problem statement is of a classification nature and the classes were already provided, therefore Logistic Regression was used. Other models were blocked in AutoML and an experiment 'Credit Card' was created. An average score of 97% was found in the experiments conducted with the models and among them, the best model was selected for testing.
    ![Experiment](https://user-images.githubusercontent.com/93479207/154238693-0695e48c-e603-43db-b62e-678497b89dda.jpg)
 
    
@@ -64,7 +64,7 @@ Compute instance is fully integrated with Azure Machine Learning workspace and s
  ![Deployment](https://user-images.githubusercontent.com/93479207/153920370-024993ed-abf4-4362-864b-26c56e24ba31.gif)
  
 ### Acknowledgments
-I would like to express my special thanks of gratitude to the mentors of Future Ready Talent who gave me the golden opportunity to do this wonderful project, which also helped me in doing a lot of research and I came to know about so many new things I am thankful to them.
+I would like to express my special thanks of gratitude to the mentors of Future Ready Talent who gave me the golden opportunity to do this wonderful project, which also helped me in doing a lot of research and I came to know about so many new things. I am thankful to them.
 
 The dataset has been collected and analyzed during a research collaboration of Worldline and the Machine Learning Group (http://mlg.ulb.ac.be) of ULB (Université Libre de Bruxelles) on big data mining and fraud detection. 
 
