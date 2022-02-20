@@ -67,4 +67,8 @@ Compute instance is fully integrated with Azure Machine Learning workspace and s
 I would like to express my special thanks of gratitude to the mentors of Future Ready Talent who gave me the golden opportunity to do this wonderful project, which also helped me in doing a lot of research and I came to know about so many new things I am thankful to them.
 
 The dataset has been collected and analyzed during a research collaboration of Worldline and the Machine Learning Group (http://mlg.ulb.ac.be) of ULB (Université Libre de Bruxelles) on big data mining and fraud detection. 
+
+### Project Demo Link
+https://youtu.be/QI0aiuGcBQ4
+
 ![Thank You](https://user-images.githubusercontent.com/93479207/154239427-d12353a1-8f16-4ffb-9dfe-743493d7d477.jpg)
